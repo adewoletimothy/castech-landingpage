@@ -1,3 +1,5 @@
+import Navbar from "./components/layout/Navbar";
+
  
 
 function SidebarItem({
@@ -21,7 +23,7 @@ export default function Home() {
     <div className="flex min-h-screen bg-gray-100">
      
       <aside className="w-64 bg-white shadow-sm p-6 hidden md:flex md:flex-col">
-        <h1 className="text-xl font-bold mb-8">
+        <h1 className="text-xl font-bold mb-8 text-teal-600">
           Purity UI
         </h1>
         <nav className="space-y-2">
@@ -44,7 +46,11 @@ export default function Home() {
       </aside>
  
       <main className="flex-1 p-6">
+        <Navbar/>
+        <div>
+
         Main Content
+        </div>
       </main>
     </div>
   );
