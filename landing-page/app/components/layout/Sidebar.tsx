@@ -1,4 +1,4 @@
-import { LayoutDashboard, Table, CreditCard, Globe, Leaf } from "lucide-react"
+import { LayoutDashboard, Rocket, File, User, Table, CreditCard, Globe, Leaf } from "lucide-react"
 
 
 export default function Home() {
@@ -31,11 +31,27 @@ export default function Home() {
             icon={Globe} 
            /> 
         </nav>
+        <p className="text-xs font-semibold text-gray-500 my-4 mb-4 ml-3">ACCOUNT PAGES</p>
+        <nav className="space-y-2 mb-6">
+          <SidebarItem
+            label="Profile"
+            icon={User} 
+           />
+          <SidebarItem
+            label="Sign In"
+            icon={File} 
+           />
+            <SidebarItem
+            label="Sign Up"
+            icon={Rocket} 
+           />
+        </nav>
+
         
-        <div className="flex-1">
+        <div className="flex-1 mt-10">
           <div className="bg-teal-500 text-white p-4 rounded-xl">
             <p className="text-sm font-medium">Need help?</p>
-            <button className="mt-3 bg-white text-teal-600 text-sm px-3 py-1 rounded-md">
+            <button className="mt-3 bg-white text-teal-600 text-sm px-3 py-1 rounded-md hover:bg-gray-100 cursor-pointer">
               Documentation
             </button>
 

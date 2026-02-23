@@ -17,7 +17,7 @@ export default function Navbar () {
             <input 
                 type="text" 
                 placeholder='Type here...'
-                className='hidden md:block h-8 placeholder-gray-200 bg-white border border-gray-200 rounded-lg px-4 py-2 
+                className='hidden md:block h-8 placeholder-gray-200 bg-white border border-gray-200  rounded-lg  px-4 py- 
                             text-sm text-black focus:outline-none focus:ring-2 focus:ring-teal-500'
             />
             <div className="flex items-center gap-1 mb-1">
