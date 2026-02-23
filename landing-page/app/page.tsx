@@ -1,6 +1,6 @@
 import Navbar from "./components/layout/Navbar";
 import Sidebar from "./components/layout/Sidebar";
- 
+import StatCardGrid from "./components/dashboard/StatCardGrid";
 
 
 export default function Home() {
@@ -11,10 +11,7 @@ export default function Home() {
  
       <main className="flex-1 p-6">
         <Navbar/>
-        <div>
-
-        Main Content
-        </div>
+        <StatCardGrid/>
       </main>
     </div>
   );
