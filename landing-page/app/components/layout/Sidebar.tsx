@@ -5,10 +5,10 @@ export default function Home() {
   return (
      
       <aside className="w-64 bg-white shadow-sm p-6 hidden md:flex md:flex-col">
-        <div className="flex items-center gap-1 mb-8">
+        <div className="flex items-center gap-1 mb-8  bg-white p-2 rounded-lg shadow-sm" >
         <Leaf size={32} className="text-teal-500 mb-4" />
-        <h1 className="text-xl font-bold mb-5 text-teal-600">
-          Purity UI
+        <h1 className="text-sm font-bold mb-5 text-teal-600">
+          PURITY UI DASHBOARD
         </h1>
 
         </div>
