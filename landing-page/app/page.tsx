@@ -34,8 +34,19 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="bg-linear-to-r from-teal-500 to-teal-400 text-white rounded-xl p-6 shadow-sm">
-            Middle Card
+          <div className="flex flex-col justify-between h-full">
+            <div>
+              <p className="text-sm opacity-80">
+                New Chakra UI Version
+              </p>
+              <h3 className="text-xl font-bold mt-2">
+                See our dashboard options
+              </h3>
+
+              <button className="mt-6 text-sm font-medium">
+                See more →
+              </button>
+            </div>
           </div>
           <div className="bg-white rounded-xl p-6 shadow-sm">
             Right Card
