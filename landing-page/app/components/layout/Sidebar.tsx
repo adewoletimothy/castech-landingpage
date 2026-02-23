@@ -1,11 +1,36 @@
-import { LayoutDashboard, Rocket, File, User, Table, CreditCard, Globe, Leaf } from "lucide-react"
+'use client'
+
+import { LayoutDashboard, Rocket, File, Menu, User, Table, CreditCard, Globe, Leaf } from "lucide-react"
+import { useState } from "react";
 
 
 export default function Home() {
+
+    
+  const [isOpen, setIsOpen] = useState(false)
+
+  const toggleSidebar = () => setIsOpen(!isOpen)
   return (
+
+    <>
+    <div className="flex items-center justify-between p-4 bg-white shadow-sm md:hidden">
+        <h1 className="text-sm font-bold text-teal-600">
+            PURITY UI DASHBOARD
+        </h1>
+
+        <button onClick={toggleSidebar}>
+            <Menu size={24} />
+        </button>
+    </div>
      
-      <aside className="w-64 bg-white shadow-sm p-6 hidden md:flex md:flex-col">
+    
+      <aside className={`fixed top-0 left-0 h-full w-64 bg-white shadow-sm p-6 transform transition-transform duration-300 z-50
+            ${isOpen ? "translate-x-0" : "-translate-x-full"}
+            md:translate-x-0 md:static md:flex md:flex-col
+        `}>
         <div className="flex items-center gap-1 mb-8  bg-white p-2 rounded-lg shadow-sm" >
+        
+         
         <Leaf size={32} className="text-teal-500 mb-4" />
         <h1 className="text-sm font-bold mb-5 text-teal-600">
           PURITY UI DASHBOARD
@@ -59,6 +84,8 @@ export default function Home() {
 
         </div>
       </aside> 
+      
+    </>
 
     );
 }

@@ -6,7 +6,7 @@ export default function StatCardGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
            <div className="relative">
         
-            <Wallet className="absolute top-4 right-4 bg-teal-100 p-2 rounded-lg"/>
+            
             <StatCard 
                 title="Today's Money" 
                 value="$53,000" 
