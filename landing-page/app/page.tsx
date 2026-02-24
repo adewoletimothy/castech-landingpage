@@ -37,7 +37,7 @@ export default function Home() {
             </div>
           <div className="flex items-center mb-1 justify-center bg-gradient-to-r from-teal-500 to-teal-400 text-white rounded-xl p-6">
               {/* <Zap size={32} className="mx-auto mb-4"/> */}
-              <h1 className="text-3xl font-semibold mt-2 ">
+              <h1 className="text-2xl font-semibold mt-2 ">
                 chakra
               </h1>
           </div> 
